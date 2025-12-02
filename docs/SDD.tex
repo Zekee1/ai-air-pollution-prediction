@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\title{Software Design Document (SDD) \\ AI Air Pollution Prediction & Visualization System}
+\author{Ezequiel Flores, Ashley Jones, Joseph Vazquez Kevin Antezana}
+\date{Snapshot 1}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section*{Version Table}
+\begin{tabular}{|c|c|c|}
+\hline
+Version & Description & Date \\
+\hline
+1.0 & Initial SDD for Snapshot 1 & \today \\
+\hline
+\end{tabular}
+
+\section{Introduction}
+\subsection{Purpose}
+This document outlines the design of an AI-powered system that predicts air pollution levels and visualizes environmental data.
+
+\subsection{Intended Audience}
+Professor, development team, data scientists, testers.
+
+\subsection{Overview}
+This SDD describe the architecture, interface, and main components of the system.
+
+\section{System Architecture}
+\subsection{High-Level Workflow}
+\begin{itemize}
+    \item User accesses dashboard
+    \item Dashboard requests data from backend
+    \item Data pipeline loads pollution dataset
+    \item AI model generates predictions
+    \item Visualizations are displayed to user
+\end{itemize}
+
+\subsection{Components}
+\begin{itemize}
+    \item Data ingestion module
+    \item Data cleaning module
+    \item Machine learning model
+    \item Visualization/dashboard interface
+\end{itemize}
+
+\section{User Interface}
+\begin{itemize}
+    \item Dashboard home page
+    \item Real-time pollution chart
+    \item Prediction visualization page
+    \item Data upload/viewing page
+\end{itemize}
+
+\section{Glossary}
+\begin{itemize}
+    \item AI - Artificial Intelligence
+    \item ML - Machine Learning
+    \item PM2.5 - Fine particulate matter
+\end{itemize}
+
+\section{References}
+\begin{itemize}
+    \item Kaggle Air Quality Dataset
+    \item Scikit-Learn Documentation
+\end{itemize}
+
+\end{document}
