@@ -10,7 +10,13 @@
 This project uses Artificial Intelligence and Data Science to predict air pollution levels and visualize environmental >
 
 ## Jira Link
-(Will be added eventually)
+[Air Pollution Prediction Jira Board](https://cs3338-group-19-2025.atlassian.net/jira/software/projects/APPV/boards/34)
+
+Contains:
+- All epics
+- Sprint 1-4 planning
+- Snapshot tasks
+- Bug tickets
 
 ## Objectives
 - Build an AI model to predict pollutant levels
