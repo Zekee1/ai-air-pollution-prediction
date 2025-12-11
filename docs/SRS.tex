@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\title{Software Requirements Specification (SRS) \\ AI Air Pollution Prediction & Visualization System}
+\title{Software Requirements Specification (SRS) \\ AI Air Pollution Prediction \& Visualization System}
 \author{Ezequiel Flores, Ashley Jones, Joseph Vazquez, Kevin Antezana}
 \date{Snapshot 1}
 
@@ -10,7 +10,7 @@
 
 \tableofcontents
 
-\section*{Version Table}
+\section*{Version Description}
 \begin{tabular}{|c|c|c|}
 \hline
 Version & Description & Date \\
@@ -20,42 +20,51 @@ Version & Description & Date \\
 \end{tabular}
 
 \section{Introduction}
+
 \subsection{Purpose}
-Define the requirements for an AI system that predicts air pollution and displays results in a dashboard.
+This document defines the requirements for an AI-based system that predicts air pollution levels and presents data visualizations to users.
 
 \subsection{Intended Audience}
-Professor, developers, testers, data scientists.
+Professor, development team, testers, and project stakeholders.
 
 \subsection{Overview}
-This SRS describes functional and non-functional requirements for the system.
+This SRS describes the system requirements, interfaces, constraints, and ethical considerations needed to develop the pollution prediction system.
 
 \section{External Interface Requirements}
+
 \subsection{User Interface}
+The user interacts with the system through a web-based dashboard.  
+The interface allows users to:
 \begin{itemize}
-    \item Dashboard with charts and graphs
-    \item Prediction module
-    \item Data upload/input page
+    \item Upload air quality datasets
+    \item Generate predictions using the AI model
+    \item View charts and graphs of pollution trends
+    \item Navigate between dashboard pages
 \end{itemize}
 
 \subsection{Software Interfaces}
+The system depends on:
 \begin{itemize}
-    \item Python environment
-    \item Pandas, NumPy, Matplotlib, Scikit-Learn
-    \item Streamlit or Flask backend
+    \item Python 3.x
+    \item Pandas, NumPy, Scikit-Learn for data analysis and machine learning
+    \item Matplotlib / Plotly for visualization
+    \item Streamlit or Flask for UI framework
+    \item CSV or database interface for dataset handling
 \end{itemize}
 
 \section{Legal and Ethical Considerations}
-\begin{itemize}
-    \item Data privacy for uploaded datasets
-    \item No harmful misuse of predictions
-    \item Transparency of AI model accuracy
-\end{itemize}
+The system must handle environmental datasets responsibly and avoid misuse of predictions.  
+Uploaded data must comply with privacy and environmental regulations.  
+Predictions should not be relied on for legal, medical, or emergency decision-making without expert review.  
+Future updates will include data protection safeguards.
 
 \section{Glossary}
 \begin{itemize}
-    \item API - Application Programming Interface
-    \item PM10 - Coarse particulate matter
-    \item UI - User Interface
+    \item AI – Artificial Intelligence
+    \item ML – Machine Learning
+    \item UI – User Interface
+    \item API – Application Programming Interface
+    \item PM2.5 – Fine particulate matter
 \end{itemize}
 
 \end{document}

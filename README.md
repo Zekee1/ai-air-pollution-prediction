@@ -7,7 +7,7 @@
 - Kevin Antezana
 
 ## Project Description
-This project uses Artificial Intelligence and Data Science to predict air pollution levels and visualize environmental >
+This project uses Artificial Intelligence and Data Science to predict air pollution levels and visualize environmental trends.
 
 ## Jira Link
 [Air Pollution Prediction Jira Board](https://cs3338-group-19-2025.atlassian.net/jira/software/projects/APPV/boards/34)

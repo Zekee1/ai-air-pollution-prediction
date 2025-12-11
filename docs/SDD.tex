@@ -1,7 +1,7 @@
 \documentclass{article}
 
 \title{Software Design Document (SDD) \\ AI Air Pollution Prediction & Visualization System}
-\author{Ezequiel Flores, Ashley Jones, Joseph Vazquez Kevin Antezana}
+\author{Ezequiel Flores, Ashley Jones, Joseph Vazquez, Kevin Antezana}
 \date{Snapshot 1}
 
 \begin{document}
@@ -27,7 +27,7 @@ This document outlines the design of an AI-powered system that predicts air poll
 Professor, development team, data scientists, testers.
 
 \subsection{Overview}
-This SDD describe the architecture, interface, and main components of the system.
+This SDD describes the architecture, interface, and main components of the system.
 
 \section{System Architecture}
 \subsection{High-Level Workflow}
@@ -47,6 +47,11 @@ This SDD describe the architecture, interface, and main components of the system
     \item Visualization/dashboard interface
 \end{itemize}
 
+\subsection{Database Design}
+For Snapshot 1, the system will use CSV files as the primary data source for storing air pollution measurements. 
+This includes attributes such as PM2.5, PM10, CO, and NO2 levels. 
+Future versions of the system may include a database such as SQLite or PostgreSQL to store user-uploaded data, prediction results, and logs.
+
 \section{User Interface}
 \begin{itemize}
     \item Dashboard home page
@@ -54,6 +59,12 @@ This SDD describe the architecture, interface, and main components of the system
     \item Prediction visualization page
     \item Data upload/viewing page
 \end{itemize}
+
+\subsection{How to Use the System}
+Users will interact with the system through a web-based dashboard. 
+They can upload air quality datasets, view automatically generated visualizations, 
+and request predictions from the AI model. 
+The dashboard will guide the user through selecting parameters and viewing results.
 
 \section{Glossary}
 \begin{itemize}
